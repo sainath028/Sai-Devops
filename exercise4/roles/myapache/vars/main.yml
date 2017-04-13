@@ -1,7 +1,0 @@
----
-# vars file for myapache
-http_port: 8090
-doc_dir: /ansible/
-doc_root: /var/www/html/ansible/
-max_clients: 25
-username: DevImranOps
