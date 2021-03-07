@@ -1,5 +1,5 @@
 ---
-- hosts: Dev
+- hosts: ec2-3-139-96-208.us-east-2.compute.amazonaws.com
   remote_user: ubuntu
   become: true
   become_method: sudo
