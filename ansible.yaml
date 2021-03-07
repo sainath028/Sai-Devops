@@ -1,0 +1,8 @@
+---
+- hosts: Dev
+  remote_user: ubuntu
+  become: true
+  become_method: sudo
+  tasks:
+        - name: Remove client repository
+          apt: "name=apache2 state=present"
