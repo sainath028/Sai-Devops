@@ -6,3 +6,7 @@
   tasks:
         - name: Remove client repository
           apt: "name=apache2 state=present"
+
+        - name: Remove client repository
+          apt: "name=apache2 state=present"
+
