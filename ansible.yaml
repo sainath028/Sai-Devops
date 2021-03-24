@@ -1,12 +1,11 @@
 ---
-- hosts: ec2-3-139-96-208.us-east-2.compute.amazonaws.com
+- hosts: localhost
   remote_user: ubuntu
   become: true
   become_method: sudo
   tasks:
-        - name: Remove client repository
-          apt: "name=apache2 state=present"
-
-        - name: Remove client repository
-          apt: "name=apache2 state=present"
+    - name: Copy file to windows server
+      win_copy:
+        src: /home/ubuntu/
+        dest: skadaverugu@192.168.100.11:C:\Users\skadaverugu\Desktop
 
